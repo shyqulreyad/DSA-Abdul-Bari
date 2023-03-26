@@ -12,3 +12,11 @@ def rec2(n):
         print(n)
 n=4
 rec2(n)
+
+def rec3(n)
+    if n>0:
+        print(n)
+        rec3(n-1)
+        print(n)
+n=5
+rec3(n)
