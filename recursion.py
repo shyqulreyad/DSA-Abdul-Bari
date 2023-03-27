@@ -13,7 +13,7 @@ def rec2(n):
 n=4
 rec2(n)
 
-def rec3(n)
+def rec3(n):
     if n>0:
         print(n)
         rec3(n-1)
