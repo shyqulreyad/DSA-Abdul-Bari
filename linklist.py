@@ -10,5 +10,5 @@ print(n1)
 print(n1._next)
 n2 = _Node(8, None)
 n1._next = n2
-print(n1._next)
+# print(n1._next)
 # print(n2._next)
