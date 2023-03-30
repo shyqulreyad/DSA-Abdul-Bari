@@ -5,14 +5,38 @@ class _Node:
         self._element = element
         self._next = next
         
-n1 = _Node(7, None)
-# print(n1)
-# print(n1._next)
-n2 = _Node(8, None)
-n1._next = n2
-head = n1
-y = head
-y= head._next
-print(head, tail)
-# print(n1._next)
-# print(n2._next)
+class LinkedList:
+    def __init__(self):
+        self._head = None
+        self._tail = None
+        self._size = 0
+        
+    def __len__(self):
+        return self._size
+    
+    def isempty(self):
+        return self._size == 0
+    
+    def addlast(self,e):
+        newest = _Node(e,None)
+        if self.isempty():
+            self._head = newest
+        else:
+            self._tail._next = newest
+        self._tail = newest
+        self._size +=1
+        
+    def display(self):
+        p = self._head
+        
+        while p:
+            print(p._element,end='-->')
+            p = p._next
+        print()
+            
+l = LinkedList()
+l.addlast(7)
+l.addlast(4)
+l.addlast(12)
+l.addlast(19)
+l.display()
