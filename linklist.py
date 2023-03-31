@@ -30,7 +30,7 @@ class LinkedList:
         p = self._head
         
         while p:
-            print(p._element,end='-->')
+            print(p._element,end='<-->')
             p = p._next
         print()
             
@@ -39,4 +39,11 @@ l.addlast(7)
 l.addlast(4)
 l.addlast(12)
 l.addlast(19)
+l.addlast(33)
+l.addlast(54)
+l.addlast('www')
+l.addlast('test number')
+l.addlast('2345esgr')
+l.addlast('test number')
+l.addlast('2345esgr')
 l.display()
