@@ -33,6 +33,17 @@ class LinkedList:
             print(p._element,end='<-->')
             p = p._next
         print()
+        
+    def search (self,key):
+        p = self._head
+        index = 0
+        while p:
+            if key == p._element:
+                return index
+            p = p._next
+            index +=1
+        return -1
+    
             
 l = LinkedList()
 l.addlast(7)
@@ -46,4 +57,6 @@ l.addlast('test number')
 l.addlast('2345esgr')
 l.addlast('test number')
 l.addlast('2345esgr')
-l.display()
+
+# l.display()
+print(l.search('test number'))
